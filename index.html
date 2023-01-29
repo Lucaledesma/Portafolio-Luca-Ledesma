@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/imgs/ticmas-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Argentina Programa</title>
+    <title>Ticmas - Proyecto Final</title>
 </head>
 <body>
 
@@ -17,31 +18,25 @@
             <button id="cerrar-menu" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="#home">
-                        <i class="bi bi-house"></i>
-                        <small class="nav-item__desc">Home</small>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">
+                    <a href="#about">
                         <i class="bi bi-person"></i>
-                        <small class="nav-item__desc">About</small>
+                        <small class="nav-item__desc">About Me</small>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">
+                    <a href="#educacion">
                         <i class="bi bi-mortarboard"></i>
                         <small class="nav-item__desc">Education</small>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">
+                    <a href="#skills">
                         <i class="bi bi-code"></i>
                         <small class="nav-item__desc">Skills</small>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">
+                    <a href="#proyectos">
                         <i class="bi bi-briefcase"></i>
                         <small class="nav-item__desc">Projects</small>
                     </a>
@@ -58,43 +53,53 @@
 
     <main class="main">
 
-        <section class="home" id="home">
-            <img src="./assets/imgs/foto-personal.jpg" alt="Imagen Usuario">
-            <h2>Luca Gonzalo Ledesma</h2>
-            <h3>Front End Developer Jr.</h3>
-            <div class="redes-icon">
-                <a href="https://github.com/Lucaledesma"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/luca-gonzalo-ledesma/"><i class="bi bi-linkedin"></i></a>
-            </div>
-            <div class="botones-info">
-                <a href="https://drive.google.com/file/d/1A7iz4hOyHpMsvyTIKblFaE5TDTcDr6Wn/view?usp=share_link"><button class="boton boton-resumen">Resumen</button></a>
-                <a href="#"><button class="boton boton-contacto">Contactanos</button></a>
-            </div>
+        <section class="main-seccion" id="about">
+            <h2 class="titulo-seccion">About Me</h2>
+            <article class="articles about-article">
+                <div class="about-informacion">
+                    <img src="./assets/imgs/foto-personal.jpg" alt="Imagen Usuario">
+                    <h2>Luca Gonzalo Ledesma</h2>
+                    <h3>Front End Developer Jr.</h3>
+                </div>
+                <div class="about-redes">
+                    <a href="https://github.com/Lucaledesma"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/luca-gonzalo-ledesma/"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="about-botones">
+                    <a href="https://drive.google.com/file/d/1A7iz4hOyHpMsvyTIKblFaE5TDTcDr6Wn/view?usp=share_link"><button class="boton boton-resumen">Resumen</button></a>
+                    <a href="#"><button class="boton boton-contacto">Contactanos</button></a>
+                </div>
+            </article>
         </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis tempora vitae eum exercitationem repellendus tempore reprehenderit, maiores cupiditate nemo ab nesciunt molestiae doloribus ratione reiciendis vero? Debitis, aliquid. Voluptatum.</p>
+        <section class="main-seccion" id="educacion">
+            <h2 class="titulo-seccion">Education</h2>
+            <article id="educacion-contenedor" class="articles educacion-article">
+
+                <!-- Aca se cargan todos los estudios -->
+
+            </article>
         </section>
 
-        <section id="educacion">
-            <h2>Educacion</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis tempora vitae eum exercitationem repellendus tempore reprehenderit, maiores cupiditate nemo ab nesciunt molestiae doloribus ratione reiciendis vero? Debitis, aliquid. Voluptatum.</p>
+        <section class="main-seccion" id="skills">
+            <h2 class="titulo-seccion">Skills</h2>
+            <article class="articles skills-article">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis tempora vitae eum exercitationem repellendus tempore reprehenderit, maiores cupiditate nemo ab nesciunt molestiae doloribus ratione reiciendis vero? Debitis, aliquid. Voluptatum.</p>
+            </article>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis tempora vitae eum exercitationem repellendus tempore reprehenderit, maiores cupiditate nemo ab nesciunt molestiae doloribus ratione reiciendis vero? Debitis, aliquid. Voluptatum.</p>
+        <section class="main-seccion" id="proyectos">
+            <h2 class="titulo-seccion">Projects</h2>
+            <article class="articles proyectos-article">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis tempora vitae eum exercitationem repellendus tempore reprehenderit, maiores cupiditate nemo ab nesciunt molestiae doloribus ratione reiciendis vero? Debitis, aliquid. Voluptatum.</p>
+            </article>
         </section>
 
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis tempora vitae eum exercitationem repellendus tempore reprehenderit, maiores cupiditate nemo ab nesciunt molestiae doloribus ratione reiciendis vero? Debitis, aliquid. Voluptatum.</p>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis tempora vitae eum exercitationem repellendus tempore reprehenderit, maiores cupiditate nemo ab nesciunt molestiae doloribus ratione reiciendis vero? Debitis, aliquid. Voluptatum.</p>
+        <section class="main-seccion" id="contacto">
+            <h2 class="titulo-seccion">Contact</h2>
+            <article class="articles contacto-article">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis tempora vitae eum exercitationem repellendus tempore reprehenderit, maiores cupiditate nemo ab nesciunt molestiae doloribus ratione reiciendis vero? Debitis, aliquid. Voluptatum.</p>
+            </article>
             <form action="" method="post">
 
             </form>
@@ -103,7 +108,7 @@
     </main>
 
     <footer class="footer">
-
+        <p>© Todos los derechos reservados.</p>
     </footer>
     
     <script src="./js/index.js"></script>

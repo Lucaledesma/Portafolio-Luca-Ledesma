@@ -85,26 +85,52 @@ li {
     font-weight: 300;
 }
 
-/***** HOME *****/
-.home {
+/***** MAIN *****/
+.main {
+    padding: 0rem 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.home img {
+.main-seccion {
+    border-bottom: 2px solid #9d9d9d;
+    padding-bottom: 1rem;
+    padding-top: 1rem ;
+}
+
+.main-seccion:nth-child(5) {
+    border: 0;
+}
+
+.articles {
+    padding-top: .5rem;
+}
+
+/***** ABOUT ME *****/
+.about-article {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.about-article img {
     max-width: 100%;
-    padding: 1.5rem;
 }
 
-.redes-icon a {
+.about-redes,
+.about-botones {
+    display: flex;
+    gap: .5rem;
+}
+
+.about-redes a {
     font-size: 1.5rem;
     color: black;
     cursor: pointer;
 }
 
 .boton {
+    width: max-content;
     border: 1px solid black;
     padding: .3rem 1rem;
     background-color: transparent;
@@ -117,15 +143,74 @@ li {
     color: white;
 }
 
-/***** ABOUT *****/
-
 /***** EDUCATION *****/
+.educacion-article{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.educacion-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid #c1c1c1;
+    padding: 1rem;
+}
+
+.educacion-item img {
+    max-width: 2rem;
+}
+
+.educacion-instituto > a > p {
+    font-size: 1.2rem;
+}
+
+.educacion-instituto > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.educacion-instituto > i {
+    cursor: pointer;
+}
+
+.educacion-item p {
+    font-weight: 500;
+}
+
+.educacion-instituto {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.educacion-informacion {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
 
 /***** SKILLS *****/
 
+
 /***** PROJECTS *****/
 
+
 /***** CONTACT *****/
+
+
+/***** FOOTER *****/
+.footer {
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    padding: .2rem 1rem;
+}
 
 .disabled {
     display: none;
@@ -133,6 +218,7 @@ li {
 
 @media only screen and (min-width: 700px) {
 
+    /***** NAVBAR *****/
     .header {
         top: 0;
         position: sticky;
@@ -160,6 +246,11 @@ li {
         padding-inline: 0;
         box-shadow: none;
         transition: none;
+    }
+
+    /***** EDUCATION *****/
+    .educacion-article{
+        grid-template-columns: repeat(4, 1fr);
     }
     
 }
