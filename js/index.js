@@ -2,7 +2,7 @@ const estudios = [
     {
         id: "estudio-1",
         nombre: "Universidad de Lanús",
-        imagen: "../assets/imgs/unla-logo.png",
+        imagen: "../assets/imgs/institutos/unla-logo.png",
         enlace: "http://www.unla.edu.ar/",
         carrera: "Licenciatura en Sistemas",
         fecha: "Febrero 2020 - Actualidad",
@@ -11,7 +11,7 @@ const estudios = [
     {
         id: "estudio-2",
         nombre: "CoderHouse",
-        imagen: "../assets/imgs/coder-logo.png",
+        imagen: "../assets/imgs/institutos/coder-logo.png",
         enlace: "https://www.coderhouse.com/",
         carrera: "Curso de JavaScript",
         fecha: "Octubre 2022 - Diciembre 2022",
@@ -20,7 +20,7 @@ const estudios = [
     {
         id: "estudio-3",
         nombre: "CoderHouse",
-        imagen: "../assets/imgs/coder-logo.png",
+        imagen: "../assets/imgs/institutos/coder-logo.png",
         enlace: "https://www.coderhouse.com/",
         carrera: "Curso de Desarrollo Web",
         fecha: "Julio 2022 - Octubre 2022",
@@ -29,7 +29,7 @@ const estudios = [
     {
         id: "estudio-4",
         nombre: "San Ignacio",
-        imagen: "../assets/imgs/sanignacio-logo.jpg",
+        imagen: "../assets/imgs/institutos/sanignacio-logo.jpg",
         enlace: "https://www.colegiosanignacio.com.ar/",
         carrera: "Educación Secundaria",
         fecha: "2014 - 2019",
