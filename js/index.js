@@ -1,42 +1,4 @@
-const estudios = [
-    {
-        id: "estudio-1",
-        nombre: "Universidad de Lanús",
-        imagen: "../assets/imgs/institutos/unla-logo.png",
-        enlace: "http://www.unla.edu.ar/",
-        carrera: "Licenciatura en Sistemas",
-        fecha: "Febrero 2020 - Actualidad",
-        certificado: "#",
-    },
-    {
-        id: "estudio-2",
-        nombre: "CoderHouse",
-        imagen: "../assets/imgs/institutos/coder-logo.png",
-        enlace: "https://www.coderhouse.com/",
-        carrera: "Curso de JavaScript",
-        fecha: "Octubre 2022 - Diciembre 2022",
-        certificado: "https://www.coderhouse.com/certificados/63a64d2e3a8cce000f455490",
-    },
-    {
-        id: "estudio-3",
-        nombre: "CoderHouse",
-        imagen: "../assets/imgs/institutos/coder-logo.png",
-        enlace: "https://www.coderhouse.com/",
-        carrera: "Curso de Desarrollo Web",
-        fecha: "Julio 2022 - Octubre 2022",
-        certificado: "https://www.coderhouse.com/certificados/6332317e599dd40010681611",
-    },
-    {
-        id: "estudio-4",
-        nombre: "San Ignacio",
-        imagen: "../assets/imgs/institutos/sanignacio-logo.jpg",
-        enlace: "https://www.colegiosanignacio.com.ar/",
-        carrera: "Educación Secundaria",
-        fecha: "2014 - 2019",
-        certificado: "#",
-    }
-];
-
+/********** NAVBAR MOBILE **********/
 let navBar = document.querySelector("#navbar");
 let abrirMenu = document.querySelector("#abrir-menu");
 let cerrarMenu = document.querySelector("#cerrar-menu");
@@ -49,9 +11,26 @@ cerrarMenu.addEventListener("click", () => {
     navBar.classList.remove("visible");
 });
 
-let educacionContenedor = document.querySelector("#educacion-contenedor");
+/********** CONTENEDORES **********/
 
-cargarEducacion(estudios);
+let educacionContenedor = document.querySelector("#educacion-contenedor");
+let skillContenedor = document.querySelector("#skill-contenedor");
+let projectContenedor = document.querySelector("#project-contenedor");
+
+/********** CARGAR EDUCACION **********/
+
+const pedirEstudios = async () => {
+    const resp = await fetch ("./js/json/education.json");
+    let estudios = await resp.json();
+    return estudios;
+}
+
+let estudios = pedirEstudios();
+
+estudios
+.then( estudios => {
+    cargarEducacion(estudios);
+});
 
 function cargarEducacion(estudios) {
 
@@ -71,7 +50,7 @@ function cargarEducacion(estudios) {
             <div class="educacion-informacion">
                 <p>${estudio.carrera}</p>
                 <small>${estudio.fecha}</small>
-                <a href="${estudio.certificado}"><button class="boton">Certificado</button></a>
+                <a href="${estudio.certificado}"><button class="boton btn-project">Certificado</button></a>
             </div>`;
 
         educacionContenedor.append(item);
@@ -79,3 +58,78 @@ function cargarEducacion(estudios) {
     });
 
 };
+
+/********** CARGAR SKILLS **********/
+
+const pedirSkills = async () => {
+    const resp = await fetch ("./js/json/skills.json");
+    let skills = await resp.json();
+    return skills;
+}
+
+let skills = pedirSkills();
+
+skills
+.then( skills => {
+    cargarSkills(skills);
+});
+
+function cargarSkills(skills) {
+
+    skillContenedor.innerHTML = "";
+
+    skills.forEach( skill => {
+
+        const item = document.createElement("div");
+        item.classList.add("skill-item");
+        item.innerHTML += `
+            <img src="${skill.imagen}" alt="${skill.nombre}">
+            <h4>${skill.nombre}</h4>
+            <small>${skill.nivel}</small>`;
+
+        skillContenedor.append(item);
+
+    });
+
+};
+
+/********** CARGAR PROJECTS **********/
+
+const pedirProjects = async () => {
+    const resp = await fetch ("./js/json/projects.json");
+    let projects = await resp.json();
+    return projects;
+}
+
+let projects = pedirProjects();
+
+projects
+.then( projects => {
+    cargarProjects(projects);
+});
+
+function cargarProjects(projects) {
+
+    projectContenedor.innerHTML = "";
+
+    projects.forEach( project => {
+
+        const item = document.createElement("div");
+        item.classList.add("proyecto-item");
+        item.innerHTML += `
+            <div class="proyecto-titulo">
+                <img src="${project.imagen}" alt="${project.nombre}">
+                <h3 class="proyecto-titulo__texto">${project.nombre}</h3>
+            </div>
+            <div class="proyecto-informacion">
+                <p class="proyecto-informacion__subtexto">${project.desc}</p>
+                <iframe src="${project.iframe}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <a href="${project.repositorio}"><button class="boton btn-project"><i class="bi bi-github"></i> GITHUB CODE</button></a>
+            </div>`;
+
+            projectContenedor.append(item);
+
+    });
+
+};
+

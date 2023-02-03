@@ -1,0 +1,62 @@
+[
+    {
+        "id": "skill-1",
+        "nombre": "ReactJS",
+        "imagen": "./assets/imgs/skills/react-logo.png",
+        "nivel": "Intermedio"
+    },
+    {
+        "id": "skill-2",
+        "nombre": "JavaScript",
+        "imagen": "./assets/imgs/skills/js-logo.png",
+        "nivel": "Intermedio"
+    },
+    {
+        "id": "skill-3",
+        "nombre": "HTML",
+        "imagen": "./assets/imgs/skills/html-logo.avif",
+        "nivel": "Avanzado"
+    },
+    {
+        "id": "skill-4",
+        "nombre": "CSS",
+        "imagen": "./assets/imgs/skills/css-logo.png",
+        "nivel": "Avanzado"
+    },
+    {
+        "id": "skill-5",
+        "nombre": "SASS",
+        "imagen": "./assets/imgs/skills/sass-logo.png",
+        "nivel": "Intermedio"
+    },
+    {
+        "id": "skill-6",
+        "nombre": "Bootstrap",
+        "imagen": "./assets/imgs/skills/bootstrap_logo.png",
+        "nivel": "Intermedio"
+    },
+    {
+        "id": "skill-7",
+        "nombre": "GitHub",
+        "imagen": "./assets/imgs/skills/github-logo.png",
+        "nivel": "Intermedio"
+    },
+    {
+        "id": "skill-8",
+        "nombre": "Java",
+        "imagen": "./assets/imgs/skills/java-logo.jpg",
+        "nivel": "Intermedio"
+    },
+    {
+        "id": "skill-9",
+        "nombre": "MySQL",
+        "imagen": "./assets/imgs/skills/mysql-logo.png",
+        "nivel": "Intermedio"
+    },
+    {
+        "id": "skill-10",
+        "nombre": "C++",
+        "imagen": "./assets/imgs/skills/cplus-logo.png",
+        "nivel": "Intermedio"
+    }
+]
