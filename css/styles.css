@@ -20,11 +20,14 @@ li {
 }
 
 /***** NAVBAR *****/
+body{
+    background-color: #f5f5f5;
+}
 
 .header {
     background-color: black;
     padding: 1rem 3rem;
-    color: white;
+    color: #f5f5f5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +63,7 @@ li {
     display: block;
     border: 0;
     background-color: transparent;
-    color: white;
+    color: #f5f5f5;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -79,7 +82,7 @@ li {
 }
 
 .nav-item a {
-    color: white;
+    color: #f5f5f5;
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -96,15 +99,19 @@ li {
     padding: 0rem 2rem;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
 }
 
 .main-seccion {
     border-bottom: 2px solid #9d9d9d;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
     padding-top: 1rem ;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
-.main-seccion:nth-child(5) {
+.main-seccion:nth-child(4) {
     border: 0;
 }
 
@@ -117,37 +124,48 @@ li {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    padding-inline: 1rem;
+
 }
 
-.about-article img {
+.about-img img {
     max-width: 100%;
 }
 
-.about-redes,
+.about-informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-informacion h2, .about-informacion h4 {
+    text-align: center;
+} 
+
+.about-informacion p {
+    text-align: justify;
+} 
+
 .about-botones {
     display: flex;
     gap: .5rem;
-}
-
-.about-redes a {
-    font-size: 1.5rem;
-    color: black;
-    cursor: pointer;
 }
 
 .boton {
     width: max-content;
     border: 1px solid black;
     padding: .3rem 1rem;
-    background-color: white;
     cursor: pointer;
+    background-color: #f5f5f5;
     transition: background-color .3s, color .3s, border .3s;
 }
 
 .boton:hover {
-    border: 1px solid white;
+    border: 1px solid #f5f5f5;
     background-color: black;
-    color: white; 
+    color: #f5f5f5; 
 }
 
 /***** EDUCATION *****/
@@ -161,7 +179,6 @@ li {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    /* border: 1px solid #c1c1c1; */
     padding: 1rem;
 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -216,9 +233,7 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid #c1c1c1; */
     padding: 1rem 0;
-
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
@@ -239,11 +254,13 @@ li {
     flex-direction: column;
     justify-content: center;
     position: relative;
+
 }
 
-.proyecto-item iframe {
+.proyecto-informacion img {
     width: 100%;
-    height: 20rem;
+    height: 280px;
+    object-fit: cover;
 }
 
 .proyecto-titulo {
@@ -252,7 +269,7 @@ li {
     gap: .8rem;
 
     background-color: black;
-    color: white;
+    color: #f5f5f5;
     padding: 1rem;
 }
 
@@ -269,8 +286,8 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: .5rem;
-    padding: .5rem 1rem;
+    gap: 1rem;
+    padding: 1rem 2rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
@@ -280,29 +297,58 @@ li {
     font-weight: 500;
 }
 
+.proyecto-informacion__view img {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; 
+    border: 3px solid black;
+    transition: transform .3s;
+}
+
+.proyecto-informacion__view img:hover {
+    transform: scale(1.02);
+}
+
 .boton.btn-project {
     width: 100%;
 }
 
-/***** CONTACT *****/
-
-
 /***** FOOTER *****/
 .footer {
     background-color: black;
-    color: white;
-    font-weight: 300;
-    padding: .2rem 1rem;
+    color: #f5f5f5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    font-size: 1.8rem;
+    padding: 1.5rem;
 }
+
+.footer-contacts {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-link {
+    color: #f5f5f5;
+}
+
+.contact-link:hover {
+    animation:pulsate-fwd .5s ease-in-out infinite both
+}
+@keyframes pulsate-fwd{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
 
 .disabled {
     display: none;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 650px) {
 
     html {
-        scroll-padding-top: 5rem;
+        scroll-padding-top: 5.5rem;
     }
 
     /***** NAVBAR *****/
@@ -335,19 +381,83 @@ li {
         transition: none;
     }
 
+    /***** ABOUT ME *****/
+    .about-article {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        margin: 0 auto;
+        padding-inline: 2rem;
+    }
+
+    .about-img,
+    .about-informacion {
+        margin: 1rem auto;
+    }
+
+    .about-img img {
+        width: 30rem;
+        border-radius: 60%;
+    }
+
+    .about-informacion h2 {
+        font-size: 2rem;
+    }
+
+    .about-informacion h4 {
+        font-size: 1.3rem;
+    } 
+    
     /***** EDUCATION *****/
     .educacion-article{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /***** SKILLS *****/
     .skills-article {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
+
+    /***** PROJECTS *****/
+    .proyectos-article {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+    
+}
+
+@media only screen and (min-width: 1070px) {
+
+    /***** ABOUT ME *****/
+    .about-article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        margin: 0 auto;
+        padding-inline: 8rem;
+    }
+    
+    /***** EDUCATION *****/
+    .educacion-article{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /***** SKILLS *****/
+    .skills-article {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     /***** PROJECTS *****/
     .proyectos-article {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+}
+
+@media only screen and (min-width: 1305px) {
+
+    /***** EDUCATION *****/
+    .educacion-article{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
 }

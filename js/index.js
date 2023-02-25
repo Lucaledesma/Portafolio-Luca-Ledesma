@@ -42,15 +42,15 @@ function cargarEducacion(estudios) {
         item.classList.add("educacion-item");
         item.innerHTML += `
             <div class="educacion-instituto">
-                <a href="${estudio.enlace}">
+                <a href="${estudio.enlace}" target="_blank">
                     <img src="${estudio.imagen}" alt="${estudio.nombre}">
-                    <p>${estudio.nombre}</p>
+                    <p>${estudio.carrera}</p>
                 </a>
             </div>
-            <div class="educacion-informacion">
-                <p>${estudio.carrera}</p>
+            <div class="educacion-informacion"> 
+                <p>${estudio.nombre}</p>
                 <small>${estudio.fecha}</small>
-                <a href="${estudio.certificado}"><button class="boton btn-project">Certificado</button></a>
+                <a href="${estudio.certificado}" target="_blank"><button class="boton btn-project">Certificado</button></a>
             </div>`;
 
         educacionContenedor.append(item);
@@ -118,13 +118,15 @@ function cargarProjects(projects) {
         item.classList.add("proyecto-item");
         item.innerHTML += `
             <div class="proyecto-titulo">
-                <img src="${project.imagen}" alt="${project.nombre}">
+                <img src="${project.logo}" alt="${project.nombre}">
                 <h3 class="proyecto-titulo__texto">${project.nombre}</h3>
             </div>
             <div class="proyecto-informacion">
                 <p class="proyecto-informacion__subtexto">${project.desc}</p>
-                <iframe src="${project.iframe}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <a href="${project.repositorio}"><button class="boton btn-project"><i class="bi bi-github"></i> GITHUB CODE</button></a>
+                <a class="proyecto-informacion__view" href="${project.view}" target="_blank">
+                    <img src="${project.imagen}" alt="${project.nombre}"/>
+                </a>
+                <a href="${project.repositorio}" target="_blank"><button class="boton btn-project"><i class="bi bi-github"></i> GITHUB CODE</button></a>
             </div>`;
 
             projectContenedor.append(item);
@@ -132,4 +134,3 @@ function cargarProjects(projects) {
     });
 
 };
-

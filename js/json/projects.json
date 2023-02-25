@@ -2,33 +2,37 @@
     {
         "id": "project-1",
         "nombre": "HTML & CSS",
-        "imagen": "./assets/imgs/skills/html-logo.avif",
+        "logo": "./assets/imgs/skills/html-logo.avif",
         "desc": "Final Project - Web Development Course",
-        "iframe": "https://www.youtube.com/embed/tyTBJq6U0Gc",
+        "imagen": "./assets/imgs/proyectos/img-project-html.png",
+        "view": "https://lucaledesma.github.io/DW-ProyectoFinal/",
         "repositorio": "https://github.com/Lucaledesma/DW-ProyectoFinal" 
     },
     {
         "id": "project-2",
         "nombre": "JavaScript",
-        "imagen": "./assets/imgs/skills/js-logo.png",
+        "logo": "./assets/imgs/skills/js-logo.png",
         "desc": "Final Project - JavaScript Course",
-        "iframe": "https://www.youtube.com/embed/YuV35W9VVFY",
+        "imagen": "./assets/imgs/proyectos/img-project-js.png",
+        "view": "https://lucaledesma.github.io/JS-ProyectoFinal/",
         "repositorio": "https://github.com/Lucaledesma/JS-ProyectoFinal"    
     },
     {
         "id": "project-3",
         "nombre": "ReactJS",
-        "imagen": "./assets/imgs/skills/react-logo.png",
-        "desc": "Project of ReactJS Course",
-        "iframe": "https://www.youtube.com/embed/9D5S-V7fAoo",
-        "repositorio": "https://github.com/Lucaledesma/React-PreEntrega2-Ledesma"
+        "logo": "./assets/imgs/skills/react-logo.png",
+        "desc": "Final Project - ReactJS Course",
+        "imagen": "./assets/imgs/proyectos/img-project-react.png",
+        "view": "https://proyectofinal-ledesma.vercel.app/",
+        "repositorio": "https://github.com/Lucaledesma/react-proyectofinal-ledesma"
     },
     {
         "id": "project-4",
         "nombre": "C++",
-        "imagen": "./assets/imgs/skills/cplus-logo.png",
+        "logo": "./assets/imgs/skills/cplus-logo.png",
         "desc": "Calculadora con Sockets (Cliente - Servidor)",
-        "iframe": "https://www.youtube.com/embed/gs8q77COepM",
+        "imagen": "./assets/imgs/proyectos/img-project-c.png",
+        "view": "https://www.youtube.com/watch?v=gs8q77COepM",
         "repositorio": "https://github.com/Lucaledesma/TP-REDES-Y-COMUNICACIONES" 
     }
 ]

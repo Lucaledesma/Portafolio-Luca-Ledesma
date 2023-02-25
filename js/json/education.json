@@ -13,26 +13,26 @@
         "nombre": "CoderHouse",
         "imagen": "./assets/imgs/institutos/coder-logo.png",
         "enlace": "https://www.coderhouse.com/",
-        "carrera": "Curso de JavaScript",
-        "fecha": "Octubre 2022 - Diciembre 2022",
-        "certificado": "https://www.coderhouse.com/certificados/63a64d2e3a8cce000f455490"
+        "carrera": "Curso de ReactJs",
+        "fecha": "Diciembre 2022 - Febrero 2023",
+        "certificado": "https://www.coderhouse.com/certificados/63ece8f799bcf9000e1337e2"
     },
     {
         "id": "estudio-3",
         "nombre": "CoderHouse",
         "imagen": "./assets/imgs/institutos/coder-logo.png",
         "enlace": "https://www.coderhouse.com/",
-        "carrera": "Curso de Desarrollo Web",
-        "fecha": "Julio 2022 - Octubre 2022",
-        "certificado": "https://www.coderhouse.com/certificados/6332317e599dd40010681611"
+        "carrera": "Curso de JavaScript",
+        "fecha": "Octubre 2022 - Diciembre 2022",
+        "certificado": "https://www.coderhouse.com/certificados/63a64d2e3a8cce000f455490"
     },
     {
         "id": "estudio-4",
-        "nombre": "San Ignacio",
-        "imagen": "./assets/imgs/institutos/sanignacio-logo.jpg",
-        "enlace": "https://www.colegiosanignacio.com.ar/",
-        "carrera": "Educación Secundaria",
-        "fecha": "2014 - 2019",
-        "certificado": "#"
+        "nombre": "CoderHouse",
+        "imagen": "./assets/imgs/institutos/coder-logo.png",
+        "enlace": "https://www.coderhouse.com/",
+        "carrera": "Curso de Desarrollo Web",
+        "fecha": "Julio 2022 - Octubre 2022",
+        "certificado": "https://www.coderhouse.com/certificados/6332317e599dd40010681611"
     }
 ]
